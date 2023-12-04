@@ -8,26 +8,37 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      text-align: center;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
     }
 
     header {
-      font-size: 1.5em;
-      font-weight: bold;
-      margin-bottom: 20px;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1em 0;
     }
 
     section {
-      margin-bottom: 20px;
-      text-align: left;
-      display: inline-block;
-      max-width: 600px; /* Adjust the width based on your preference */
-      width: 100%;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1,
+    h2 {
+      color: #333;
     }
 
     h2 {
-      color: #333;
       border-bottom: 2px solid #333;
+      padding-bottom: 8px;
+      margin-top: 20px;
     }
 
     ul {
@@ -36,12 +47,7 @@
     }
 
     li {
-      margin-bottom: 5px;
-    }
-
-    .date {
-      float: right;
-      margin-top: 0; /* Adjust the top margin based on your preference */
+      margin-bottom: 8px;
     }
   </style>
 </head>
@@ -50,18 +56,24 @@
 
   <header>
     <h1>Aidan Javidpour</h1>
-    <p>AidanJavidpour@gmail.com | Ashland, Massachusetts | 774-505-2185</p>
-    <p><a href="https://github.com/AidanJavidpour" target="_blank">My GitHub!</a></p>
-    <p><a href="https://www.linkedin.com/in/aidan-javidpour-7791a522a/" target="_blank">LinkedIn!</a></p>
+    <p>Computer Science Student</p>
   </header>
 
   <section>
+    <h2>Contact Information</h2>
+    <p>Email: AidanJavidpour@gmail.com</p>
+    <p>Location: Ashland, Massachusetts</p>
+    <p>Phone: 774-505-2185</p>
+    <p>GitHub: <a href="https://github.com/AidanJavidpour" target="_blank">github.com/AidanJavidpour</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/aidan-javidpour-7791a522a/" target="_blank">https://www.linkedin.com/in/aidan-javidpour-7791a522a/</a></p>
+  </section>
+
+  <section>
     <h2>Education</h2>
-    <p>University of Massachusetts Lowell – Lowell, MA</p>
+    <p>University of Massachusetts Lowell – Lowell, MA | May 2025</p>
     <p>Candidate for Bachelor of Science in Computer Science</p>
     <p>Relevant Coursework: Software Engineering, Data Structures, Object-Oriented Programming</p>
     <p>Awards and Activities: Koplik Certificate of Mastery Award</p>
-    <p>Expected Graduation: May 2025</p>
   </section>
 
   <section>
@@ -76,58 +88,37 @@
 
   <section>
     <h2>Projects</h2>
-
-    <article>
-      <h3>Visual Studio Code Extension | Typescript</h3>
-      <p class="date">September 2023</p>
-      <ul>
-        <li>Developed a Visual Studio Code extension that displays the current time and offers a user-friendly timer option</li>
-      </ul>
-    </article>
-
-    <article>
-      <h3>Discord Bot | Python</h3>
-      <p class="date">Summer 2020</p>
-      <ul>
-        <li>Engineered a multipurpose Discord bot for customizing servers</li>
-        <li>Utilizes and protects users from spam using a customizable auto-moderation system</li>
-      </ul>
-    </article>
-
-    <!-- Add similar sections for other projects -->
-
+    <p>Visual Studio Code Extension | Typescript (September 2023)</p>
+    <ul>
+      <li>Developed a visual studio code extension that displays the current time and offers a user-friendly timer option</li>
+    </ul>
+    <p>Sokoban | C++ (March 2023)</p>
+    <ul>
+      <li>Successfully recreated the classic Sokoban puzzle game using the SFML library</li>
+      <li>Manipulated and traversed multiple matrices to hold game data and character movement</li>
+    </ul>
+    <!-- Add other projects as needed -->
   </section>
 
   <section>
     <h2>Work Experience</h2>
-
-    <article>
-      <h3>Marshalls, Framingham, Massachusetts</h3>
-      <p>Sales Associate</p>
-      <ul>
-        <li>Successfully executed opening and closing duties with attention to detail</li>
-        <li>Contributed to store-wide team-building activities and events</li>
-      </ul>
-      <p class="date">Summer 2023</p>
-    </article>
-
-    <article>
-      <h3>Best Buy, Marlborough, Massachusetts</h3>
-      <p>Customer Experience Specialist</p>
-      <ul>
-        <li>Trained four new hires while ensuring compliance with all company regulations</li>
-        <li>Leveraged technology to optimize inventory management processes</li>
-      </ul>
-      <p class="date">Summer 2021</p>
-    </article>
-
-    <!-- Add similar sections for other work experiences -->
-
+    <p>Marshalls, Framingham, Massachusetts | Summer 2023</p>
+    <p>Sales Associate</p>
+    <ul>
+      <li>Successfully executed opening and closing duties with attention to detail</li>
+      <li>Contributed to store-wide team-building activities and events</li>
+    </ul>
+    <p>Best Buy, Marlborough, Massachusetts | Summer 2021</p>
+    <p>Customer Experience Specialist</p>
+    <ul>
+      <li>Trained four new hires while ensuring compliance with all company regulations</li>
+      <li>Leveraged technology to optimize inventory management processes</li>
+    </ul>
   </section>
 
   <section>
     <h2>Interests</h2>
-    <p>Music, swimming, weightlifting, racquetball, and videogames such as Rocket League and ARK: Survival Evolved</p>
+    <p>Music, swimming, weightlifting, racquetball, and video games such as Rocket League and ARK: Survival Evolved</p>
   </section>
 
 </body>
