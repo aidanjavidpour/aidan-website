@@ -7,37 +7,44 @@
   <title>Aidan Javidpour - Resume</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+        position: relative;
+        min-height: 100vh;
     }
 
     header {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 4px;
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 4px;
+    }
+
+    header h1 {
+        color: white;
     }
 
     section {
-      max-width: 800px;
-      margin: 12px auto; /* Smaller top and bottom margins */
-      padding: 15px;    /* Smaller padding */
-      background-color: white;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 800px;
+        margin: 12px auto;
+        padding: 15px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
     h1, h2 {
-      color: #333;
+        color: #333;
     }
 
     h2 {
-      border-bottom: 2px solid #333;
-      padding-bottom: 8px;
-      margin-top: 10px; /* Smaller top margin */
+        border-bottom: 2px solid #333;
+        padding-bottom: 8px;
+        margin-top: 10px;
     }
 
     ul {
@@ -58,6 +65,44 @@
     span {
       float: right;
     }
+
+    body.dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    }
+
+    .dark-mode header {
+        background-color: #333;
+        color: white;
+    }
+
+    .dark-mode header h1 {
+        color: white; /* Add this line to ensure your name is white in dark mode */
+    }
+
+    .dark-mode section {
+        background-color: #1a1a1a;
+        color: #ffffff;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+
+    .dark-mode h2 {
+        border-bottom: 2px solid #ffffff; /* Adjust the border color if needed */
+        color: #ffffff;
+    }
+
+    #darkModeToggle {
+    position: fixed; /* Fix the button position */
+    bottom: 10px; /* Adjust the bottom distance as needed */
+    left: 10px; /* Adjust the left distance as needed */
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    }
+
+
 
   </style>
 </head>
@@ -126,6 +171,9 @@
     <h2>Interests</h2>
     <p>Music, swimming, weightlifting, racquetball, and video games such as Rocket League and ARK: Survival Evolved</p>
   </section>
+
+  <button id="darkModeToggle">Toggle Dark Mode</button>
+  <script src="script.js"></script>
 
 </body>
 
